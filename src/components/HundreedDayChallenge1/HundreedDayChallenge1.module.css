@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(to top right, #43389f, #4ec6ca);
+  font-family: "Courier New", "Courier", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+.center {
+  position: absolute;
+  top: 50.6%;
+  left: 50.8%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  height: 100px;
+  width: 60px;
+}
+
+.oneOne {
+  position: absolute;
+  height: 40px;
+  width: 20px;
+  background: white;
+  z-index: 1;
+  display: block;
+  left: -16px;
+  transform: rotate(45deg);
+  border-radius: 3px;
+}
+.oneTwo {
+  position: absolute;
+  height: 100px;
+  width: 23px;
+  background: white;
+  z-index: 15;
+  display: block;
+  border-radius: 3px;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+.zeroOne {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 12px;
+  border: 25px solid #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
+  z-index: 10;
+  display: block;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+.zeroTwo {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 100px;
+  border: 25px solid #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
+  z-index: 6;
+  display: block;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+.days {
+  position: relative;
+  z-index: 20;
+  display: block;
+  font-size: 82px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 6px;
+}
+.cssChallenge {
+  position: relative;
+  z-index: 20;
+  display: block;
+  font-size: 24px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}

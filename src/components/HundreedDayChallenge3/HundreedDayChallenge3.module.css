@@ -1,0 +1,213 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #272c34;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 3;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle {
+  position: relative;
+  overflow: hidden;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.sky {
+  z-index: 0;
+  height: 124px;
+  background-color: #7ddffc;
+  animation: animationForSky 4s infinite;
+}
+
+.ground {
+  background-color: #f0de75;
+  height: 56px;
+  animation: animationForSand 4s infinite;
+}
+
+.sun {
+  z-index: 2;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: yellow;
+  top: 7px;
+  left: 73px;
+  border-radius: 50%;
+  transform-origin: 50% 400%;
+  animation: animationForSun 4s infinite;
+}
+.triangle1 {
+  height: 58px;
+  width: 123px;
+  background-color: white;
+  top: 67px;
+  left: 36px;
+  position: absolute;
+  clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+  animation: animationForTriangle 4s infinite;
+  /* polygon(100% 0%, 100% 100%, 0% 100%); */
+}
+
+.triangle2 {
+  height: 58px;
+  width: 66px;
+  background-color: #dddada;
+  top: 67px;
+  left: 97px;
+  position: absolute;
+  clip-path: polygon(30% 100%, 100% 100%, 0% 0%);
+  /* polygon(0% 0%, 0% 100%, 100% 100%); */
+  animation: animationForTriangle 4s reverse infinite;
+}
+
+.shadow {
+  position: absolute;
+  height: 50px;
+  width: 169px;
+  background: rgba(0, 0, 0, 0.2);
+  left: 6px;
+  top: 124px;
+  transform-origin: 50% 0%;
+  clip-path: polygon(30px 0%, 161px 0%, 265% 35%);
+  animation: animationForShadow 4s infinite;
+}
+
+@keyframes animationForSun {
+  0% {
+    background: #f57209;
+    transform: rotate(-70deg);
+  }
+
+  30% {
+    background: #ffef00;
+    transform: rotate(-28deg);
+  }
+
+  70% {
+    background: #ffef00;
+  }
+
+  100% {
+    background: #f57209;
+    transform: rotate(70deg);
+  }
+}
+
+@keyframes animationForSand {
+  0% {
+    background: #272c34;
+  }
+
+  30% {
+    background: #f0de75;
+  }
+
+  70% {
+    background: #f0de75;
+  }
+
+  100% {
+    background: #272c34;
+  }
+}
+
+@keyframes sun-goes-down {
+  0% {
+    background: #f57209;
+    transform: rotate(-70deg);
+  }
+
+  30% {
+    background: #ffef00;
+    transform: rotate(-28deg);
+  }
+
+  70% {
+    background: #ffef00;
+  }
+
+  100% {
+    background: #f57209;
+    transform: rotate(70deg);
+  }
+}
+
+@keyframes animationForSky {
+  0% {
+    background: #272c34;
+  }
+
+  30% {
+    background: #7ddffc;
+  }
+
+  70% {
+    background: #7ddffc;
+  }
+
+  100% {
+    background: #272c34;
+  }
+}
+
+@keyframes animationForTriangle {
+  0% {
+    background: #272c34;
+  }
+
+  30% {
+    background: #f4f4f4;
+  }
+
+  70% {
+    background: #dddada;
+  }
+
+  100% {
+    background: #272c34;
+  }
+}
+
+@keyframes animationForShadow {
+  0% {
+    transform: scaleY(0);
+    clip-path: polygon(30px 0%, 161px 0%, 265% 35%);
+  }
+
+  30% {
+    transform: scaleY(1);
+    clip-path: polygon(30px 0%, 161px 0%, 85% 35%);
+  }
+
+  75% {
+    transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleY(0);
+    clip-path: polygon(30px 0%, 161px 0%, 0% 35%);
+  }
+}
