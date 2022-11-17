@@ -14,4 +14,9 @@ export const cssChallengeData = [
     comonentName: "CSS Challenge Three",
     componentPath: "/hundreeddayCSS/challenge3",
   },
+  {
+    id: 4,
+    comonentName: "CSS Challenge Four",
+    componentPath: "/hundreeddayCSS/challenge4",
+  },
 ];

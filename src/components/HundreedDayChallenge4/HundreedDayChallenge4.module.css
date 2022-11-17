@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #e56262;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bigCircle {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 10px 10px 15px 0 rgb(0 0 0 / 30%);
+  animation: growBigCircle 2s infinite alternate;
+}
+
+.medCircle {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 10px 10px 15px 0 rgb(0 0 0 / 30%);
+  animation: growMedCircle 2s infinite alternate;
+}
+
+.smallCircle {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 10px 10px 15px 0 rgb(0 0 0 / 30%);
+  animation: growSmallCircle 2s infinite alternate;
+}
+
+@keyframes growBigCircle {
+  0% {
+    height: 0px;
+    width: 0px;
+  }
+  50% {
+    height: 90px;
+    width: 90px;
+  }
+  100% {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@keyframes growMedCircle {
+  50% {
+    height: 0px;
+    width: 0px;
+  }
+  75% {
+    height: 60px;
+    width: 60px;
+  }
+  100% {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@keyframes growSmallCircle {
+  75% {
+    height: 0px;
+    width: 0px;
+  }
+  100% {
+    height: 30px;
+    width: 30px;
+  }
+}
